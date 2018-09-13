@@ -6,7 +6,7 @@ void PrintConsoleRevision()
 	int regs[4];
 
 	__cpuid(regs, CPUID_HW_REV);
-	int consoleRevId = regs[2] & 0xFF;
+	int consoleRevId = regs[2] & 0xFFFF;
 
 	char *consoleRev = (char *)calloc(1, 0x100);
 
@@ -29,6 +29,9 @@ void PrintConsoleRevision()
 		break;
 	case HW_REV_EDMONTON:
 		consoleRev = "Edmonton";
+		break;
+	case HW_REV_SCORPIO:
+		consoleRev = "Scorpio";
 		break;
 	default:
 		consoleRev = "Unknown";

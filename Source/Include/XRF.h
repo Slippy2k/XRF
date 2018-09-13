@@ -7,15 +7,16 @@
 #define CPUID_HW_REV 0x4000000D
 
 /*
-* Console Revisions (REQUIRES UPDATING)
+* Console Revisions
 */
 
-#define HW_REV_DURANGO             0x10
-#define HW_REV_SILVERTON_ZORRO     0x20
-#define HW_REV_SILVERTON_MANDA     0x21
-#define HW_REV_CARMEL_BASE         0x30
-#define HW_REV_CARMEL_4K           0x31
-#define HW_REV_EDMONTON            0x40
+#define HW_REV_DURANGO				0x10
+#define HW_REV_SILVERTON_ZORRO		0x20
+#define HW_REV_SILVERTON_MANDA		0x21
+#define HW_REV_CARMEL_BASE			0x30
+#define HW_REV_CARMEL_4K			0x31
+#define HW_REV_EDMONTON				0x40
+#define HW_REV_SCORPIO				0x50
 
 /*
 * Devkit types
