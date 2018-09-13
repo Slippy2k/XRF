@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{f779f711-0535-4f12-a747-a117f576f8f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0d78cae4-b96f-4b09-bbac-d69ef961156d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Modules">
+      <UniqueIdentifier>{8606c369-1c3f-4c40-960b-dfdc9616c71e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PCH.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XRF.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\XRF.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCH.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Modules\XCrdAPI.h">
+      <Filter>Include\Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
