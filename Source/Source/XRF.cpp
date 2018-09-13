@@ -6,7 +6,7 @@ void PrintConsoleRevision()
 	int regs[4];
 
 	__cpuid(regs, CPUID_HW_REV);
-	int consoleRevId = regs[2];
+	int consoleRevId = regs[2] & 0xFF;
 
 	char *consoleRev = (char *)calloc(1, 0x100);
 
