@@ -8,7 +8,7 @@ void PrintConsoleRevision()
 	__cpuid(regs, CPUID_HW_REV);
 	int consoleRevId = regs[2];
 
-	char *consoleRev = (char *)malloc(0x100);
+	char *consoleRev = (char *)calloc(1, 0x100);
 
 	switch (consoleRevId)
 	{
@@ -33,7 +33,7 @@ void PrintConsoleRevision()
 	default:
 		consoleRev = "Unknown";
 	}
-	printf("Console Revision: %s\n", consoleRev);
+	printf("Console Revision: %s (0x%04X)\n", consoleRev, consoleRevId);
 }
 
 void PrintDevkitType()
